@@ -32,7 +32,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile
+          file: ./docker/Dockerfile
           push: true
           # 这里的 my-chatwoot 可以改成你自定义的镜像名称
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/chatwoot:latest
